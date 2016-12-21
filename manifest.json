@@ -4,10 +4,11 @@
   "name": "Remind Me To",
   "description": "Reminder extension that sends notification alerts for tasks that are due",
   "version": "1.0",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "src/index.html"
+    "default_popup": "index.html"
   },
   "permissions": [
     "activeTab",

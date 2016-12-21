@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script src="startup.js"></script>
+    <!--<script>
+      //not allowed inside html as per extension's content policy
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>-->
+  </head>
+
+  <body style="width:400px;height:300px">
+    <my-app>
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>        
+    </my-app>
+  </body>
+</html>
